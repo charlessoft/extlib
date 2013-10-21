@@ -1,0 +1,9 @@
+﻿Build started 2013-10-22 0:58:13.
+     1>Project "E:\libcurl\libcurl\zlib\contrib\vstudio\vc10\zlibstat.vcxproj" on node 2 (clean target(s)).
+     1>_PrepareForClean:
+         Deleting file "x86\ZlibStatDebug\Tmp\zlibstat.lastbuildstate".
+     1>Done Building Project "E:\libcurl\libcurl\zlib\contrib\vstudio\vc10\zlibstat.vcxproj" (clean target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.45
