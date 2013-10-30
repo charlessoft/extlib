@@ -12,3 +12,8 @@ target:
 	ar r libjsoncpp.a *.o
 clean:
 	rm *.o libjsoncpp.a -rf
+install:
+	mkdir /usr/local/include/jsoncpp -p
+	mkdir /usr/local/lib/jsoncpp -p
+	cp ../../include/ /usr/local/include/jsoncpp -r
+	cp ./libjsoncpp.a /usr/local/lib/jsoncpp
