@@ -63,7 +63,7 @@
     <ClCompile>
       <Optimization>MaxSpeed</Optimization>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
-      <AdditionalIncludeDirectories>.;..\..\..\include;%(AdditionalIncludeDirectories);..\..\..\..\..\openssl\include;..\..\..\..\zlib</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.;..\..\..\include;%(AdditionalIncludeDirectories);..\..\..\..\openssl\include;..\..\..\..\zlib</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;BUILDING_LIBCURL;%(PreprocessorDefinitions)USE_SSLEAY;USE_OPENSSL;ASMV;ASMINF;ZLIB_WINAPI</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
@@ -85,6 +85,10 @@
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <OutputFile>.\Release/libcurl.bsc</OutputFile>
     </Bscmake>
+    <Lib>
+      <AdditionalLibraryDirectories>..\..\..\..\openssl\rel\lib;..\..\..\..\zlib\contrib\vstudio\vc10\x86\ZlibStatRelease</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libeay32.lib;ssleay32.lib;zlibstat.lib</AdditionalDependencies>
+    </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <Midl>
